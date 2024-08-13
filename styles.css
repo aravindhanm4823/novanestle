@@ -58,8 +58,21 @@ h2 {
     margin-top: 1rem;
 }
 
-@media (min-width: 600px) {
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem; /* Reduce padding on very small screens */
+    }
+
+    main {
+        padding: 0.5rem; /* Reduce padding to fit content better */
+        margin: 0; /* Remove margin to prevent overflow on small screens */
+        width: 100%; /* Ensure width fits the screen */
+        box-shadow: none; /* Remove shadow to save space */
+    }
+
     textarea, input[type="number"], input[type="time"], button {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Slightly reduce font size on small screens */
+        padding: 0.4rem; /* Adjust padding for smaller screens */
     }
 }
